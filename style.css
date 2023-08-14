@@ -56,10 +56,9 @@
     /* Combina los bordes de las celdas adyacentes */
     border: 2px solid black;
     margin: 5px;
-    
+
   }
 
-  th,
   td {
     border: 1px solid black;
     padding: 8px;
@@ -70,8 +69,8 @@
     padding-left:
   }
 
-  main{
-      display: flex;
-      justify-content: center;
-      align-items: center;
+  main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
