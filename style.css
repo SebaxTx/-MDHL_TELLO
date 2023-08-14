@@ -1,3 +1,6 @@
+  body{
+    background-color: beige;
+  }
   .menu {
     position: absolute;
     top: 100px;
@@ -41,7 +44,21 @@ header img {
 }
 
 .info {
-    position: absolute;
-    left: 300px;
-    top: 420px;
+  position: absolute;
+  left: 300px;
+  top: 420px;
+}
+table {
+  background-color:rgb(178, 180, 57);
+  border-collapse: collapse; /* Combina los bordes de las celdas adyacentes */
+  border: 2px solid black;
+}
+
+th, td {
+  border: 1px solid black;
+  padding: 8px;
+}
+ol #ABC{
+  list-style-type:upper-alpha;
+  padding-left:
 }
