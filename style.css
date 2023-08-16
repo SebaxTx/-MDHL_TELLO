@@ -3,25 +3,25 @@ body {
 }
 
 .menu {
-  position: absolute;
-  top: 100px;
-  left: 900px;
-  transform: translate(-50%, -50%);
+  position:fixed;
+  top: 10px;
+  right: 10px;
 }
 
 .enlace {
-  width: 100px;
-  height: 75px;
+  display: inline-block;
   background-color: #50e02c;
   color: white;
-  padding: 1px;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  padding: 5px 10px; /* Adjust the padding around the links */
+  margin: 5px 0; /* Add some spacing between links */
+  font-size: 16px; /* Adjust the font size */
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.5);
 }
 
 header h1 {
   font-size: 40px;
   margin-left: 50px;
-  font-style: inherit;
+  font-style: italic;
 }
 
 header h2 {
@@ -31,8 +31,9 @@ header h2 {
   text-align: center;
   border: 2px solid black;
   width: 900px;
-  margin-top: 0px;
+  margin-top: 0;
   margin-left: 150px;
+  padding: 10px;
 }
 
 header img {
@@ -53,6 +54,9 @@ table {
   border-collapse: collapse;
   border: 2px solid black;
   margin: 5px;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 td {
@@ -63,11 +67,53 @@ td {
 ol#ABC {
   list-style-type: upper-alpha;
   padding-left: 20px;
-  /* Agrega un valor de padding izquierdo aquí */
 }
 
 main {
   display: flex;
   justify-content: center;
   align-items: center;
+  min-height: 100vh;
 }
+
+/* Media Queries */
+
+@media screen and (max-width: 768px) {
+  header h1 {
+    font-size: 32px;
+    margin-left: 20px;
+  }
+
+  header h2 {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  header img {
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+  }
+
+  .info {
+    position: static;
+    margin-top: 20px;
+    text-align: center;
+  }
+
+  .menu {
+    position:relative; /* Keep the menu at the top right */
+    top: 10px;
+    right: 10px;
+    padding: 10px; /* Add some padding for better touch interaction */
+  }
+
+  .enlace {
+    font-size: 14px; /* Adjust the font size */
+    padding: 5px 8px; /* Adjust the padding around the links */
+  }
+}
+
+
+
